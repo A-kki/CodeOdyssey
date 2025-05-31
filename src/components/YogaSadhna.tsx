@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -14,7 +15,6 @@ const YogaSadhna = () => {
   const [isPaused, setIsPaused] = useState(false);
   const { toast } = useToast();
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const yogaTypes = [
     { 
@@ -49,27 +49,6 @@ const YogaSadhna = () => {
 
   const currentYoga = yogaTypes.find(yoga => yoga.id === selectedYoga);
 
-  // Initialize audio
-  useEffect(() => {
-    // Create audio element for background music
-    audioRef.current = new Audio();
-    audioRef.current.src = "https://www.soundjay.com/misc/sounds/meditation-chime-01.wav"; // Fallback meditation audio
-    audioRef.current.loop = true;
-    audioRef.current.volume = 0.3;
-
-    // Try to use a meditation audio URL (since direct YouTube audio extraction isn't possible in browser)
-    // In a real app, you'd need to convert the YouTube audio to a direct audio file
-    const meditationAudioUrl = "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav";
-    audioRef.current.src = meditationAudioUrl;
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-    };
-  }, []);
-
   const playFinalTickingSound = () => {
     // Play ticking sound for 2 seconds
     const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
@@ -102,10 +81,7 @@ const YogaSadhna = () => {
       intervalRef.current = setInterval(() => {
         setTimeRemaining(time => {
           if (time <= 1) {
-            // Time's up - stop background music and play final ticking
-            if (audioRef.current) {
-              audioRef.current.pause();
-            }
+            // Time's up - play final ticking sound
             playFinalTickingSound();
             toast({
               title: "Session Complete! 🧘‍♀️",
@@ -135,12 +111,6 @@ const YogaSadhna = () => {
     setIsActive(true);
     setIsPaused(false);
     
-    // Start background audio
-    if (audioRef.current) {
-      audioRef.current.currentTime = 0;
-      audioRef.current.play().catch(console.error);
-    }
-    
     toast({
       title: "Session Started",
       description: `Starting ${currentYoga?.name} for ${duration[0]} minutes`,
@@ -149,30 +119,12 @@ const YogaSadhna = () => {
 
   const pauseSession = () => {
     setIsPaused(!isPaused);
-    
-    if (!isPaused) {
-      // Pausing
-      if (audioRef.current) {
-        audioRef.current.pause();
-      }
-    } else {
-      // Resuming
-      if (audioRef.current) {
-        audioRef.current.play().catch(console.error);
-      }
-    }
   };
 
   const stopSession = () => {
     setIsActive(false);
     setIsPaused(false);
     setTimeRemaining(0);
-    
-    // Stop background audio
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-    }
     
     toast({
       title: "Session Stopped",
@@ -254,12 +206,6 @@ const YogaSadhna = () => {
                 <div className="text-6xl font-bold text-white mb-6">
                   {isActive ? formatTime(timeRemaining) : formatTime(duration[0] * 60)}
                 </div>
-
-                {isActive && (
-                  <div className="text-cyan-400 mb-4 text-sm">
-                    🎵 Background music playing
-                  </div>
-                )}
 
                 <div className="flex justify-center gap-4">
                   {!isActive ? (
