@@ -118,10 +118,10 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-trick
 *Clean, bright interface perfect for daytime use*
 
 ### 🧘 MindfulMinutes - Guided Meditation
-<div align="center">
-  <img src="/lovable-uploads/a950536c-5720-429f-adcb-628bbd332cc6.png" alt="Mindfulness Session" width="45%"/>
-  <img src="/lovable-uploads/f3b3ad3d-1799-4534-8b63-b0c3b58ecc55.png" alt="Breathing Exercise" width="45%"/>
-</div>
+
+  ![2](https://github.com/user-attachments/assets/5ac23169-944a-4ec0-af29-a2453ec01076)
+  ![3](https://github.com/user-attachments/assets/029f4617-3bc6-4c6f-8ae9-32db46f6c970)
+
 
 *Choose from mindfulness, breathing exercises, or body scan meditations with customizable durations*
 
