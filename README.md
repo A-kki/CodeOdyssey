@@ -108,19 +108,20 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-trick
 ## 🖼️ Screenshots
 
 ### 🌙 Dark Theme Experience
-<img src="/lovable-uploads/f4ac46e0-aa02-4174-856d-ecc24a7db259.png" alt="MindWell Dark Theme" width="100%"/>
+![2](https://github.com/user-attachments/assets/5ac23169-944a-4ec0-af29-a2453ec01076)
 
 *Beautiful dark theme with gradient backgrounds and intuitive navigation*
 
 ### ☀️ Light Theme Experience  
-<img src="/lovable-uploads/0d4c51a7-829e-4257-9e16-af0b4eb2f6a2.png" alt="MindWell Light Theme" width="100%"/>
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/8f2ca033-e972-4924-8bdb-0a8549d47973" />
+
 
 *Clean, bright interface perfect for daytime use*
 
 ### 🧘 MindfulMinutes - Guided Meditation
 
-  ![2](https://github.com/user-attachments/assets/5ac23169-944a-4ec0-af29-a2453ec01076)
-  ![3](https://github.com/user-attachments/assets/029f4617-3bc6-4c6f-8ae9-32db46f6c970)
+  
+ <img width="939" alt="image" src="https://github.com/user-attachments/assets/b6b9723e-a5dd-479c-a559-9b6b83f47104" />
 
 
 *Choose from mindfulness, breathing exercises, or body scan meditations with customizable durations*
@@ -131,27 +132,26 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-trick
 *Interactive mood selection with detailed journaling capabilities*
 
 ### 🤖 AI-Powered Insights
-<img src="/lovable-uploads/3d20a6d2-e475-4e53-8315-95ee833f6b11.png" alt="AI Mood Insights" width="100%"/>
-
+![3](https://github.com/user-attachments/assets/029f4617-3bc6-4c6f-8ae9-32db46f6c970)
 *Advanced AI analyzes your emotions and provides personalized insights*
 
 ### 🧘‍♀️ Yoga Sadhna - Wellness Practice
-<img src="/lovable-uploads/e5f9c34c-faac-41bd-a421-e5f690005b41.png" alt="Yoga Session Interface" width="100%"/>
+<img width="938" alt="image" src="https://github.com/user-attachments/assets/acf75bc8-859e-490e-ba2b-75b5d46854f7" />
+<img width="944" alt="image" src="https://github.com/user-attachments/assets/5328d86f-4530-417c-919e-5dc80ee01848" />
 
 *Comprehensive yoga practice with multiple session types and background audio*
 
 ### 📅 SereneSchedule - Habit Tracking
-<img src="/lovable-uploads/a9a729b2-976a-4b32-81b8-7a1caaad97d9.png" alt="Habit Tracking Calendar" width="100%"/>
-
+<img width="934" alt="image" src="https://github.com/user-attachments/assets/7e575759-1b71-4675-8bf5-92ede8c978a8" />
 *Visual habit tracking with calendar interface and streak counters*
 
 ### 🌱 ThoughtGarden - CBT Thought Tracker
-<img src="/lovable-uploads/519fa595-5c6c-498a-947b-c600ed2086f4.png" alt="CBT Thought Tracking" width="100%"/>
-
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/32901463-92d2-449f-9b32-b5a4c21cf0bb" />
 *Cognitive Behavioral Therapy tools for thought analysis and reframing*
 
 ### 📝 VentSpace - AI Mood Detection
-<img src="/lovable-uploads/658b518b-0b98-452e-8ad2-269984939edd.png" alt="AI Mood Detection" width="100%"/>
+<img width="946" alt="image" src="https://github.com/user-attachments/assets/dcb69b25-84f4-4b66-a233-dd8a80079ce1" />
+<img width="936" alt="image" src="https://github.com/user-attachments/assets/bf637847-966a-4f34-8fd2-b204b21bfcc9" />
 
 *Write freely and let AI detect your emotional state while connecting with friends*
 
